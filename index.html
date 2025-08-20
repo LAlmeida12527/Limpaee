@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limpaê - Início</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #222; }
+    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #ddd; z-index: 1000; }
+    .topbar { background: #15803d; color: #fff; text-align: center; font-size: 14px; padding: 6px; }
+    .container { max-width: 1100px; margin: auto; padding: 0 16px; }
+    nav { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    nav a { margin-left: 16px; text-decoration: none; color: #222; font-size: 14px; }
+    nav a:hover { color: #15803d; }
+    nav img { height: 60px; object-fit: contain; } /* Ajuste do tamanho da logo */
+    .hero { background: #ecfdf5; padding: 60px 20px; text-align: center; }
+    .hero h1 { color: #166534; font-size: 36px; margin-bottom: 16px; }
+    .hero p { max-width: 600px; margin: auto; margin-bottom: 24px; color: #444; }
+    .btn { display: inline-block; padding: 12px 24px; background: #15803d; color: #fff; border-radius: 8px; text-decoration: none; }
+    .btn:hover { background: #166534; }
+    section { padding: 60px 20px; }
+    section h2 { text-align: center; font-size: 28px; color: #166534; margin-bottom: 20px; }
+    .grid { display: grid; gap: 20px; }
+    .impacto .grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { background: #fff; border: 1px solid #cce3d2; padding: 20px; border-radius: 12px; }
+    .card h3 { color: #15803d; margin-bottom: 8px; }
+    details { padding: 14px; }
+    summary { cursor: pointer; font-weight: bold; }
+    footer { background: #fff; border-top: 1px solid #ddd; padding: 40px 20px; font-size: 14px; }
+    footer .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    footer a { text-decoration: none; color: #444; }
+    footer a:hover { color: #15803d; }
+  </style>
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">Denuncie focos de lixo e ajude a manter sua cidade limpa 🌱</div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div><img src="assets/logo.png" alt="Limpaê"></div>
+        <div>
+          <a href="index.html">Início</a>
+          <a href="denuncia.html">Denunciar</a>
+          <a href="#impacto">Impacto</a>
+          <a href="#faq">FAQ</a>
+          <a href="sobre.html">Sobre Nós</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Juntos contra o lixo irregular</h1>
+    <p>Sua denúncia ajuda a Prefeitura e órgãos ambientais a identificarem focos de acúmulo de lixo,
+    promovendo uma cidade mais limpa e saudável para todos.</p>
+    <a href="denuncia.html" class="btn">Fazer uma denúncia agora</a>
+  </section>
+
+  <!-- Impacto -->
+  <section id="impacto" class="impacto">
+    <h2>Por que denunciar?</h2>
+    <p style="text-align:center; max-width:600px; margin:auto;">
+      O descarte incorreto de lixo gera riscos à saúde, proliferação de doenças, entupimento de bueiros
+      e degradação ambiental. Sua denúncia contribui diretamente para a melhoria da qualidade de vida
+      da comunidade.
+    </p>
+    <div class="grid" style="margin-top:30px;">
+      <div class="card"><h3>Saúde pública</h3><p>Ajuda a combater focos de mosquitos e pragas.</p></div>
+      <div class="card"><h3>Meio ambiente</h3><p>Preserva áreas verdes e rios contra a poluição.</p></div>
+      <div class="card"><h3>Infraestrutura</h3><p>Evita entupimento de bueiros e enchentes.</p></div>
+      <div class="card"><h3>Comunidade</h3><p>Garante espaços mais limpos e seguros.</p></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div style="max-width:600px; margin:auto; border:1px solid #ddd; border-radius:12px;">
+      <details><summary>Posso denunciar anonimamente?</summary><p>Sim, você não precisa se identificar.</p></details>
+      <details><summary>O que acontece após a denúncia?</summary><p>A equipe da Prefeitura avalia e agenda a coleta.</p></details>
+      <details><summary>Preciso pagar algo?</summary><p>Não, o serviço de coleta é público e gratuito.</p></details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container grid">
+      <div>
+        <img src="assets/logo.png" alt="Limpaê" style="height:40px; object-fit:contain;"><br>
+        <p>Plataforma colaborativa para uma cidade mais limpa.</p>
+      </div>
+      <div>
+        <strong>Links úteis</strong><br>
+        <a href="denuncia.html">Denunciar</a><br>
+        <a href="#impacto">Impacto</a><br>
+        <a href="#faq">FAQ</a><br>
+        <a href="sobre.html">Sobre Nós</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
