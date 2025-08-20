@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Limpaê - Denúncia de Lixo</title>
+  <title>Limpaê - Início</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #222; }
     header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #ddd; }
@@ -12,6 +12,7 @@
     nav { display: flex; justify-content: space-between; align-items: center; height: 60px; }
     nav a { margin-left: 16px; text-decoration: none; color: #222; font-size: 14px; }
     nav a:hover { color: #15803d; }
+    nav img { height: 40px; }
     .hero { background: #ecfdf5; padding: 60px 20px; text-align: center; }
     .hero h1 { color: #166534; font-size: 36px; margin-bottom: 16px; }
     .hero p { max-width: 600px; margin: auto; margin-bottom: 24px; color: #444; }
@@ -19,10 +20,6 @@
     .btn:hover { background: #166534; }
     section { padding: 60px 20px; }
     section h2 { text-align: center; font-size: 28px; color: #166534; margin-bottom: 20px; }
-    form { max-width: 600px; margin: auto; background: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 12px; }
-    form input, form textarea, form select { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 8px; }
-    form button { width: 100%; padding: 14px; border: none; border-radius: 8px; background: #15803d; color: #fff; font-size: 16px; }
-    form button:hover { background: #166534; }
     .grid { display: grid; gap: 20px; }
     .impacto .grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
     .card { background: #fff; border: 1px solid #cce3d2; padding: 20px; border-radius: 12px; }
@@ -33,7 +30,6 @@
     footer .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
     footer a { text-decoration: none; color: #444; }
     footer a:hover { color: #15803d; }
-    .sobre { max-width: 800px; margin: auto; line-height: 1.6; }
   </style>
 </head>
 <body>
@@ -44,9 +40,10 @@
   <header>
     <div class="container">
       <nav>
-        <div><strong>Limpaê</strong></div>
+        <div><img src="assets/logo.png" alt="Limpaê"></div>
         <div>
-          <a href="#denuncia">Denunciar</a>
+          <a href="index.html">Início</a>
+          <a href="denuncia.html">Denunciar</a>
           <a href="#impacto">Impacto</a>
           <a href="#faq">FAQ</a>
           <a href="sobre.html">Sobre Nós</a>
@@ -60,29 +57,7 @@
     <h1>Juntos contra o lixo irregular</h1>
     <p>Sua denúncia ajuda a Prefeitura e órgãos ambientais a identificarem focos de acúmulo de lixo,
     promovendo uma cidade mais limpa e saudável para todos.</p>
-    <a href="#denuncia" class="btn">Fazer uma denúncia agora</a>
-  </section>
-
-  <!-- Formulário -->
-  <section id="denuncia">
-    <h2>Formulário de Denúncia</h2>
-    <form>
-      <input type="text" placeholder="Seu nome (opcional)">
-      <input type="email" placeholder="Email para contato (opcional)">
-      <select>
-        <option>Selecione o tipo de lixo</option>
-        <option>Lixo doméstico</option>
-        <option>Entulho de construção</option>
-        <option>Resíduos eletrônicos</option>
-        <option>Resíduos hospitalares</option>
-        <option>Podas de árvores</option>
-        <option>Outros</option>
-      </select>
-      <textarea placeholder="Descreva o local do lixo irregular" rows="4"></textarea>
-      <input type="text" placeholder="Endereço aproximado ou ponto de referência">
-      <input type="file">
-      <button type="submit">Enviar denúncia</button>
-    </form>
+    <a href="denuncia.html" class="btn">Fazer uma denúncia agora</a>
   </section>
 
   <!-- Impacto -->
@@ -115,12 +90,12 @@
   <footer>
     <div class="container grid">
       <div>
-        <strong>Limpaê</strong>
+        <img src="assets/logo.png" alt="Limpaê" style="height:40px;"><br>
         <p>Plataforma colaborativa para uma cidade mais limpa.</p>
       </div>
       <div>
         <strong>Links úteis</strong><br>
-        <a href="#denuncia">Denunciar</a><br>
+        <a href="denuncia.html">Denunciar</a><br>
         <a href="#impacto">Impacto</a><br>
         <a href="#faq">FAQ</a><br>
         <a href="sobre.html">Sobre Nós</a>
